@@ -23,7 +23,7 @@ About this Fork
 ---------------
 
 * Some fixes
-* Build with SBuild >= 0.3.1.9000 (upcomming 0.3.2)
+* Build with [SBuild](http://sbuild.tototec.de) >= 0.3.1.9000 (upcomming 0.3.2)
 
 
 SBT Plugin
