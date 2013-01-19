@@ -19,6 +19,12 @@ MiMa is split into Several modules:
 - Reporter-UI: Swing interface to the reporter.
 - SBT Plugin:  The SBT plugin for usage inside SBT builds.
 
+About this Fork
+---------------
+
+* Some fixes
+* Build with SBuild >= 0.3.1.9000 (upcomming 0.3.2)
+
 
 SBT Plugin
 ----------
