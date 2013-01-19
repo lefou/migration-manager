@@ -22,7 +22,7 @@ object PackageInfo {
 import PackageInfo._
 
 class SyntheticPackageInfo(owner: PackageInfo, val name: String) extends PackageInfo(owner) {
-  def definitions: Definitions = error("Called definitions on synthetic package")
+  def definitions: Definitions = sys.error("Called definitions on synthetic package")
   lazy val packages = mutable.Map.empty[String, PackageInfo]
   lazy val classes = mutable.Map.empty[String, ClassInfo]
 }
