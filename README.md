@@ -25,9 +25,12 @@ About this Fork
 * Some fixes
 * Build with [SBuild](http://sbuild.tototec.de) >= 0.3.1.9000 (upcomming 0.3.2)
 
-This tools will detect binary incompatibilities between two versions of a library or tool.
+This tools will detect binary incompatibilities between two versions of a library (or jar).
 
-this tools will **NOT** help you migration a binary release version of the library migrate to another Scala version. So, if you need to use a library compile for Scala 2.9.2 in Scala 2.10.0, you are on your onw.
+This tools will **not** help you to migrate a binary-omly released version of a library tp another Scala version.
+o, if you need a library that was compiled for Scala 2.9.2 in a Scala 2.10.0 environment, you are on your onw. 
+
+This tool also will **not** help you to detect, if a binary version of a library will run agains your specific Scala version flawlessly.
 
 
 SBT Plugin
