@@ -4,16 +4,12 @@ import de.tototec.sbuild.ant._
 import de.tototec.sbuild.ant.tasks._
 import de.tototec.sbuild.natures.experimental._
 
-@version("0.3.1.9000")
-@classpath(
-  "mvn:org.apache.ant:ant:1.8.4"
-)
-@include(
-  "../Natures-SNAPSHOT.scala"
-)
+@version("0.3.2")
+@classpath("mvn:org.apache.ant:ant:1.8.4")
+@include("../Natures-SNAPSHOT.scala")
 class SBuild(implicit _project: Project) {
 
-  val scalaVersion = "2.9.2"
+  val scalaVersion = "2.10.0"
 
   val main = new CleanNature with CompileScalaNature with JarNature {
 
@@ -25,8 +21,8 @@ class SBuild(implicit _project: Project) {
     override def compileScala_scalaVersion = scalaVersion
     override def compileScala_classpath = 
       s"mvn:org.scala-lang:scala-library:${scalaVersion}" ~
-      s"mvn:org.scala-lang:scala-compiler:${scalaVersion}" 
-//      s"mvn:org.scala-lang:scala-reflect:${scalaVersion}" 
+      s"mvn:org.scala-lang:scala-compiler:${scalaVersion}" ~
+      s"mvn:org.scala-lang:scala-reflect:${scalaVersion}" 
 
   }
   main.createTargets

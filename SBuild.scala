@@ -2,15 +2,9 @@ import de.tototec.sbuild._
 import de.tototec.sbuild.TargetRefs._
 import de.tototec.sbuild.ant._
 import de.tototec.sbuild.ant.tasks._
-import de.tototec.sbuild.natures.experimental._
 
-@version("0.3.1.9000")
-@classpath(
-  "mvn:org.apache.ant:ant:1.8.4"
-)
-@include(
-  "Natures-SNAPSHOT.scala"
-)
+@version("0.3.2")
+@classpath("mvn:org.apache.ant:ant:1.8.4")
 class SBuild(implicit _project: Project) {
 
   val modules = Seq("core", "reporter")
